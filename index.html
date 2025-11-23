@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Favorite Music Videos</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Dosis:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg-dark: #050816;
+      --bg-card: #020617;
+      --accent: #e11d48;
+      --accent-soft: #f97316;
+      --text-main: #e5e7eb;
+      --text-muted: #9ca3af;
+      --border-soft: rgba(148, 163, 184, 0.5);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Dosis', Arial, sans-serif;
+      background: radial-gradient(circle at top left, #1e293b 0%, #020617 45%, #000000 100%);
+      color: var(--text-main);
+      line-height: 1.7;
+    }
+
+    header {
+      background: linear-gradient(to right, rgba(15, 23, 42, 0.96), rgba(15, 23, 42, 0.92));
+      text-align: center;
+      padding: 1.4rem 1rem;
+      border-bottom: 1px solid var(--border-soft);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.45);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    header h1 {
+      margin: 0;
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      position: relative;
+      display: inline-block;
+    }
+
+    header h1::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: -0.4rem;
+      width: 60%;
+      height: 3px;
+      border-radius: 999px;
+      background: linear-gradient(90deg, var(--accent), var(--accent-soft));
+    }
+
+    main {
+      max-width: 950px;
+      margin: 0 auto;
+      padding: 2rem 1rem 3rem;
+      width: 100%;
+    }
+
+    section {
+      background: var(--bg-card);
+      padding: 1.75rem;
+      border-radius: 18px;
+      margin-bottom: 2rem;
+      border: 1px solid var(--border-soft);
+      box-shadow: 0 18px 40px rgba(0,0,0,0.65);
+      transition: 0.25s ease;
+    }
+
+    section:hover {
+      transform: translateY(-4px);
+      border-color: rgba(248, 250, 252, 0.6);
+      box-shadow: 0 22px 55px rgba(0,0,0,0.85);
+    }
+
+    section h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.6rem;
+      margin-bottom: 0.5rem;
+      color: var(--text-main);
+    }
+
+    section h2 span {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      display: block;
+    }
+
+    section p {
+      color: var(--text-muted);
+      margin-bottom: 1.1rem;
+      font-size: 1rem;
+    }
+
+    iframe {
+      width: 100%;
+      height: 320px;
+      border: none;
+      border-radius: 14px;
+      box-shadow: 0 14px 30px rgba(0,0,0,0.85);
+      background: black;
+    }
+
+    footer {
+      background: linear-gradient(to right, #020617, #020617 40%, #030712 100%);
+      padding: 1.4rem 1rem 1.8rem;
+      text-align: center;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      border-top: 1px solid var(--border-soft);
+      box-shadow: 0 -10px 30px rgba(0,0,0,0.7);
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>My Favorite Music Videos</h1>
+  </header>
+
+  <main>
+
+    <!-- SONG 1 -->
+    <section>
+      <h2><span>Track One</span>“Crazy” – Aerosmith</h2>
+      <p>
+        “Crazy” is one of Aerosmith’s most iconic videos, mixing storytelling, attitude, and energy.
+        The video’s rebellious vibe and memorable characters make it a classic visually and musically.
+      </p>
+      <iframe
+        src="https://www.youtube.com/embed/NMNgbISmF4I"
+        title="Crazy by Aerosmith - music video"
+        allowfullscreen>
+      </iframe>
+    </section>
+
+    <!-- SONG 2 -->
+    <section>
+      <h2><span>Track Two</span>“I Don't Wanna Miss a Thing” – Aerosmith</h2>
+      <p>
+        This song became one of Aerosmith’s biggest hits, and the music video adds strong cinematic emotion.
+        Its visuals match the power of the song, making it a timeless classic.
+      </p>
+      <iframe
+        src="https://www.youtube.com/embed/JkK8g6FMEXE"
+        title="I Don't Wanna Miss a Thing by Aerosmith - music video"
+        allowfullscreen>
+      </iframe>
+    </section>
+
+    <!-- SONG 3 -->
+    <section>
+      <h2><span>Track Three</span>“Simple Man” – Lynyrd Skynyrd</h2>
+      <p>
+        “Simple Man” is emotional and meaningful, with a message about life and values.
+        The video’s reflective tone adds depth to the song’s powerful lyrics and gives it a timeless feel.
+      </p>
+      <iframe
+        src="https://www.youtube.com/embed/Mqfwbf3X8SA"
+        title="Simple Man by Lynyrd Skynyrd - music video"
+        allowfullscreen>
+      </iframe>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Davi Ethan Teixeira Sandes. All rights reserved.</p>
+    <p><strong>Google Fonts used:</strong> Playfair Display and Dosis (from Google Fonts).</p>
+    <p><strong>Video sources:</strong> All music videos embedded from YouTube.</p>
+  </footer>
+
+</body>
+</html>
